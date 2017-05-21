@@ -24,7 +24,6 @@ public class UniqueChar {
 		return true;
 	}
 	
-
 	public static void main(String[] args) {
 		
 		UniqueChar test = new UniqueChar();

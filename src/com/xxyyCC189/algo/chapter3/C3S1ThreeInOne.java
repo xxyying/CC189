@@ -19,8 +19,8 @@ public class C3S1ThreeInOne {
 	// constructor
 	public C3S1ThreeInOne(int stackSize) {
 		stackCapacity = stackSize;
-		int[] sizes = new int[numberOfStacks]; // record the current size of each stack
-		int[] values = new int[stackSize * numberOfStacks]; 
+		sizes = new int[numberOfStacks]; // record the current size of each stack
+		values = new int[stackSize * numberOfStacks]; 
 	}
 	
 	public void push(int numOfStack, int value) throws Exception{
@@ -65,7 +65,8 @@ public class C3S1ThreeInOne {
 	
 	
 	public static void main(String[] args) throws Exception {
-		C3S1ThreeInOne test = new C3S1ThreeInOne(3);
+		C3S1ThreeInOne test = new C3S1ThreeInOne(10);
+		
 		test.push(1, 2);
 		test.push(1, 3);
 		System.out.println(test.pop(1));
